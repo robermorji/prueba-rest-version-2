@@ -35,7 +35,7 @@ app.get('/borrar_calificacion', function (req, res) {
 /**
  * Servicio web creación de empresa
  */
-app.put('/crear_empresa/:nombre', function( req, response ) {
+app.get('/crear_empresa/:nombre', function( req, response ) {
 	mongo.connect("mongodb://localhost:27017/empresaDb", function(err, db) {
 				var nombre_empresa = req.params.nombre;
 				if(err) {
