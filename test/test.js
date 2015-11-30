@@ -13,7 +13,7 @@ describe( 'Pruebas ', function() {
 	
 	it('Añadir una nueva empresa', function (done) {
 	request(app)
-		.put('/crear_empresa/NuevaEmpresaPrueba')
+		.get('/crear_empresa/NuevaEmpresaPrueba')
 		.expect('Content-Type',"text/html; charset=utf-8")
 		.expect(200,done);
 		
